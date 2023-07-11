@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b23b437a8f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(image/1.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .icon{
+            display: flex;
+        }
+        
+        .icon i{
+            font-size: 55px;
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+        .icon p{
+            color: #f6762c;
+            padding-top: 25px;
+            padding-left: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        ul{
+            display: flex;
+            gap: 60PX;
+            height: 100px;
+            align-items: center;
+            padding-top: 38px;
+            margin-left: 100px;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            text-decoration:none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding-top: 25px;
+            
+        }
+        ul li a:hover{
+         color: #f6762c;
+        }
+        .textbox{
+            display: flex;
+            align-items: center;
+            height: 100px;
+            padding-top: 38px;
+            margin-left: 100px;
+
+        }
+        input{
+            height: 35px;
+            outline: none;
+            border: 1px solid #f6762c;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            padding-left: 5px;
+            background-color: transparent;
+            color: white;
+            font-family: sans-serif;
+            font-size: medium;
+            width: 170px;
+        }
+        input::placeholder{
+            margin-left: 10px;
+            font-size: large;
+        }
+        .Serch{
+            border: 1px solid #f6762c;
+            height: 36px;
+            width: 90px;
+            background-color: #f6762c;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: white;
+        }
+        main{
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+   
+        h1{
+            color: white;
+            font-size: 5rem;
+            margin-left: 50px;
+        }
+        .DEV{
+            color: #f6762c;
+        }
+        .info{
+            color: white;
+            margin-left: 50px;
+        }
+        .Join{
+            margin-left: 50px;
+            margin-top: 30px;
+            height: 45px;
+            width: 160px;
+            border: 1px solid #f6762c;
+            border-radius: 30px;
+            background-color: transparent;
+            color: white;
+            font-size: large;
+            cursor: pointer;
+            position: relative;
+        }
+        .button{
+           position: absolute;
+           height: 100%;
+           width: 0px;
+           left: 0;
+           top: 0;
+           border-radius: 30px;
+           background-color: #f6762c;
+           transition: width 0.5s;
+        }
+        .button:hover{
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="icon">
+            <i class="fa-solid fa-desktop" style="color: #f6762c;"></i>
+            <p>Nahom</p>
+        </div>
+
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">DESIGN</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+
+        <div class="textbox">
+            <input type="text" placeholder="type here">
+            <button class="Serch">Serch</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="text">
+            <h1>Web Design & <br> <span class="DEV">Development</span> <br> Course</h1>
+            <p class="info">Web Design is a speciallsation of the design stream.They also use HTML. <br> CSS.WYSIWYG editing software. mark up valldators etc..<br> to create design elements</p>
+            <button class="Join"><span class="button"></span>Join us</button>
+        </div>
+    </main>
+</div>
+</body>
+</html>
